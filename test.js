@@ -20,12 +20,14 @@ async function testRun(){
 
     const SelectTransmissions = await driver.findElement(By.xpath('//select[@id="transmission"]')).click();
     await driver.findElement(By.xpath('//*[@id="transmission"]/option[2]')).click();
-
+    await driver.findElement(By.xpath('//*[@id="go_to_step_3"]')).click();
 
 } 
 testRun();
 
  
+
+//*[@id="go_to_step_3"]
 
 //*[@id="engine"]
 //*[@id="engine"]/option[2]
