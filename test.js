@@ -15,9 +15,14 @@ async function testRun(){
     await driver.findElement(By.xpath('//*[@id="go_to_step_2"]')).click();
    
     // await driver.findElement(By.xpath('//*[@id="engine"]')).click();
-    const loc = await driver.findElement(By.xpath('//select[@id="engine"]')).click();
+    const SelectEngine = await driver.findElement(By.xpath('//select[@id="engine"]')).click();
     await driver.findElement(By.xpath('//*[@id="engine"]/option[2]')).click();
-}
+
+    const SelectTransmissions = await driver.findElement(By.xpath('//select[@id="transmission"]')).click();
+    await driver.findElement(By.xpath('//*[@id="transmission"]/option[2]')).click();
+
+
+} 
 testRun();
 
  
