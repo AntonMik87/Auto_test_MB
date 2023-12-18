@@ -1,3 +1,5 @@
+// Auto_test_https://testdrive.andersenlab.com
+
 const webdriver = require('selenium-webdriver');
 driver = new webdriver.Builder().forBrowser('chrome').build();
 const By = webdriver.By
@@ -41,13 +43,18 @@ await driver.findElement(By.xpath('//input[@id="form_phone"]')).clear();
 await driver.findElement(By.xpath('//input[@id="form_phone"]')).sendKeys('+7913111222333A,-}АбAb')
  // Клюкнуть кнопку продолжить
  await driver.findElement(By.xpath('//*[@id="go_to_step_4"]')).click();
+
+// Клюкнуть кнопку бронировать
+ await driver.findElement(By.xpath('//*[@id="finish"]')).click();
+
+
 }
 
 
 testRun();
 
  
-
+//*[@id="finish"]
 //*[@id="go_to_step_3"]
 
 //*[@id="engine"]
