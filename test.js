@@ -14,7 +14,7 @@ async function testRun(){
     // driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     // Выбор авто
     await driver.findElement(By.xpath('//*[@id="slider"]/span[1]')).click();
-     // Клюкнуть кнопку продолжить
+     // Кликнуть кнопку продолжить
     await driver.findElement(By.xpath('//*[@id="go_to_step_2"]')).click();
    
     // await driver.findElement(By.xpath('//*[@id="engine"]')).click();
@@ -24,7 +24,7 @@ async function testRun(){
     const SelectTransmissions = await driver.findElement(By.xpath('//select[@id="transmission"]')).click();
     await driver.findElement(By.xpath('//*[@id="transmission"]/option[2]')).click();
 
-     // Клюкнуть кнопку продолжить
+     // Кликнуть кнопку продолжить
     await driver.findElement(By.xpath('//*[@id="go_to_step_3"]')).click();
 
 // Очистить поле, чтобы очистить его от любых предыдущих данных
@@ -41,10 +41,10 @@ await driver.findElement(By.xpath('//input[@id="form_age"]')).sendKeys('8,-}Аб
 // Phone number
 await driver.findElement(By.xpath('//input[@id="form_phone"]')).clear();
 await driver.findElement(By.xpath('//input[@id="form_phone"]')).sendKeys('+7913111222333A,-}АбAb')
- // Клюкнуть кнопку продолжить
+ // Кликнуть кнопку продолжить
  await driver.findElement(By.xpath('//*[@id="go_to_step_4"]')).click();
 
-// Клюкнуть кнопку бронировать
+// Кликнуть кнопку бронировать
  await driver.findElement(By.xpath('//*[@id="finish"]')).click();
 
 
